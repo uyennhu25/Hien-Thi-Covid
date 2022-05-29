@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        fieldset{
+            display: inline;
+            padding-right: 20px;
+        }
+        legend, th{
+            font-weight: bold;
+            font-size: 17px;
+            
+        }
+        table {
+            margin: 15px;
+            padding: 5px;
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+            border-spacing: 13px;
+        }
+
+        tr {
+            border-bottom: solid #cfcfcf 1px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <button onclick="hienThi1()">Hiển thị thông tin Covid (API 1)</button><br>
+    <button onclick="hienThi2()">Hiển thị thông tin Covid (API 2)</button><br>
+
+    <fieldset>
+        <legend>Thông tin Covid</legend>
+        <table id="table1"></table>
+        <table id="table2"></table>
+    </fieldset>
+
+    <script src="tinhHinhCovid.js"></script>
+
+</body>
+</html>
